@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Дмитрий Самохин",
+    "subtitle": "Руководитель команды ЗАО",
+    "image": "assets/districts/zao-samokhin.jpg",
+    "tag": "ЗАО"
+  },
+  {
+    "title": "Алексей Злобин",
+    "subtitle": "Руководитель команды СЗАО",
+    "image": "assets/districts/szao-zlobin.jpg",
+    "tag": "СЗАО"
+  },
+  {
+    "title": "Полина Борисевич",
+    "subtitle": "Руководитель команды ВАО",
+    "image": "assets/districts/vao-borisevich.jpg",
+    "tag": "ВАО"
+  },
+  {
+    "title": "Алёна Кабаш",
+    "subtitle": "Руководитель команды ЦАО",
+    "image": "assets/districts/cao-kabash.jpg",
+    "tag": "ЦАО"
+  },
+  {
+    "title": "Варламова Марина",
+    "subtitle": "Руководитель команды ЮЗАОиТиНАО",
+    "image": "assets/districts/uzao-tinao-varlamova.jpg",
+    "tag": "ЮЗАОиТиНАО"
+  },
+  {
+    "title": "Лазарева Елизавета",
+    "subtitle": "Руководитель команды ЮАО",
+    "image": "assets/districts/uao-lazareva.jpg",
+    "tag": "ЮАО"
+  },
+  {
+    "title": "Ольга Штаханова",
+    "subtitle": "Руководитель окружной команды СВАО",
+    "image": "assets/districts/svao-shtahanova.jpg",
+    "tag": "СВАО"
+  },
+  {
+    "title": "Елена Макарова",
+    "subtitle": "Руководитель команды Зеленоград",
+    "image": "assets/districts/zelenograd-makarova.jpg",
+    "tag": "Зеленоград"
+  }
+]

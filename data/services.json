@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Социологическая служба",
+    "subtitle": "Люди. Мнения. Инсайты.",
+    "image": "assets/services/sociological.jpg",
+    "tag": "Исследования"
+  },
+  {
+    "title": "Профсоюзная служба",
+    "subtitle": "Люди. Права. Возможности.",
+    "image": "assets/services/union.jpg",
+    "tag": "Поддержка"
+  },
+  {
+    "title": "Аналитическая служба",
+    "subtitle": "Данные. Инсайты. Результаты.",
+    "image": "assets/services/analytics-lead.jpg",
+    "tag": "Аналитика"
+  },
+  {
+    "title": "Аналитическая служба",
+    "subtitle": "Заместитель руководителя",
+    "image": "assets/services/analytics-deputy.jpg",
+    "tag": "Аналитика"
+  },
+  {
+    "title": "Медиаслужба",
+    "subtitle": "Создаём истории. Делимся успехами.",
+    "image": "assets/services/media.jpg",
+    "tag": "Медиа"
+  },
+  {
+    "title": "IT-служба",
+    "subtitle": "Код для лучшего будущего",
+    "image": "assets/services/it.jpg",
+    "tag": "Технологии"
+  },
+  {
+    "title": "Служба заботы",
+    "subtitle": "Люди. Поддержка. Комфорт.",
+    "image": "assets/services/care.jpg",
+    "tag": "Комфорт"
+  },
+  {
+    "title": "Методическая служба",
+    "subtitle": "Создаём среду. Раскрываем потенциал.",
+    "image": "assets/services/methodical.jpg",
+    "tag": "Обучение"
+  },
+  {
+    "title": "Игротехническая служба",
+    "subtitle": "Каждый день — приключение",
+    "image": "assets/services/game.jpg",
+    "tag": "Геймификация"
+  },
+  {
+    "title": "Спортивная служба",
+    "subtitle": "Движение. Энергия. Победа.",
+    "image": "assets/services/sport.jpg",
+    "tag": "Спорт"
+  }
+]
