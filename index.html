@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <title>Новый Вектор 2026</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Официальный сайт проекта Новый Вектор 2026">
+    <title>Новый Вектор 2026</title>
+    <meta name="description" content="Новый Вектор 2026">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
@@ -15,50 +15,72 @@
       <div class="wrap nav">
         <a class="brand" href="index.html">
           <span class="brand-mark"></span>
-          <span>Новый<br>Вектор 2026</span>
+          <span>
+            Новый<br>Вектор 2026
+          </span>
         </a>
         <div class="navlinks">
           <a class="active" href="index.html">Главная</a>
-          <a class="" href="today.html">А что у нас сегодня?</a>
-          <a class="" href="necessary.html">Все необходимое</a>
-          <a class="" href="project-team.html">Команда</a>
           <a class="" href="services.html">Службы</a>
+          <a class="" href="districts.html">Окружные команды</a>
+          <a class="" href="team.html">Управляющая команда</a>
         </div>
       </div>
     </div>
-    <header class="hero home-hero">
+
+    <header class="hero">
       <div class="wrap">
-        <section class="hero-card center-hero">
-          <div class="eyebrow">Профсоюзная профессиональная школа</div>
-          <h1>Новый вектор <span>2026</span></h1>
-          <p class="lead">Быстрая навигация по проекту: что происходит сегодня, где найти все важные материалы и кто собирает «Новый вектор» в единую систему.</p>
+        <section class="hero-card">
+          <div class="eyebrow">Навигация по проекту</div>
+          <h1>
+            Выберите <span>раздел</span>
+          </h1>
+          <p class="lead">
+            Один сайт для всех карточек: службы, руководители окружных команд и управляющая команда проекта.
+          </p>
         </section>
       </div>
     </header>
 
     <main class="wrap">
-      <section class="home-menu">
-        <a class="mega-choice today-choice" href="today.html">
-          <div class="num">Сегодня</div>
-          <h2>А что у нас сегодня?</h2>
-          <p>Переход к актуальному дню проведения: расписание, цитата дня и важные акценты.</p>
+      <section class="choice-grid">
+        <a class="choice" href="services.html">
+          <div class="num">01</div>
+          <h2>Службы</h2>
+          <p>
+            Команды, которые отвечают за атмосферу, процессы, поддержку, аналитику, медиа, спорт и технологии.
+          </p>
         </a>
-        <a class="mega-choice" href="necessary.html">
-          <div class="num">Разделы</div>
-          <h2>Все необходимое</h2>
-          <p>Команда проекта, подготовка до выезда и страницы каждого дня «Нового вектора — 2026».</p>
+        <a class="choice" href="districts.html">
+          <div class="num">02</div>
+          <h2>Руководители окружных команд</h2>
+          <p>
+            Лица команд округов, их цитаты и личный ответ на вопрос: что для меня «Новый Вектор»?
+          </p>
+        </a>
+        <a class="choice" href="team.html">
+          <div class="num">03</div>
+          <h2>Управляющая команда</h2>
+          <p>
+            Команда, которая собирает проект «Новый Вектор — 2026» в единую систему.
+          </p>
         </a>
       </section>
     </main>
+
     <footer>
-      <div class="wrap">© Новый Вектор 2026 · Вместе создаём атмосферу, в которой хочется быть!</div>
+      <div class="wrap">
+        © Новый Вектор 2026 · Вместе создаём атмосферу, в которой хочется быть!
+      </div>
     </footer>
+
     <div class="modal" id="modal" role="dialog" aria-modal="true">
       <div class="modal-inner">
         <button class="close" id="close" aria-label="Закрыть">×</button>
         <img id="modalImg" alt="">
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
