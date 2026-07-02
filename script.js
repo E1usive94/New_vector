@@ -2,7 +2,7 @@
   const cfg = window.NV_CONFIG || { currentDayUrl: 'day1.html' };
   document.querySelectorAll('[data-current-day-link]').forEach(a => { a.href = cfg.currentDayUrl || 'day1.html'; });
   if (document.body.dataset.redirectToday === 'true') {
-    const target = cfg.currentDayUrl || 'day2.html';
+    const target = cfg.currentDayUrl || 'day1.html';
     const fallback = document.getElementById('redirectFallback');
     if (fallback) fallback.href = target;
     setTimeout(() => { window.location.href = target; }, 350);
