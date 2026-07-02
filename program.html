@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Программа</title>
+    <meta name="description" content="Официальный сайт проекта Новый Вектор 2026">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ========== ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ДЛЯ БЛОКИРОВКИ ========== -->
+    <style>
+      /* Блокируем неактивные карточки дней */
+      .tile.disabled {
+        pointer-events: none;   /* отключаем клики и наведение */
+        opacity: 0.4;           /* делаем полупрозрачными */
+        cursor: default;        /* убираем указатель-руку */
+        filter: grayscale(0.3); /* лёгкое обесцвечивание для наглядности */
+        transition: opacity 0.2s ease;
+      }
+      /* Дополнительно можно убрать подчёркивание и эффекты */
+      .tile.disabled:hover {
+        opacity: 0.4;           /* без изменений при наведении */
+        transform: none;        /* отключаем анимации, если они есть */
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- ========== ВЕРХНЯЯ ПАНЕЛЬ НАВИГАЦИИ ========== -->
+    <div class="topbar">
+      <div class="wrap nav">
+        <!-- Логотип -->
+        <a class="brand" href="index.html">
+         
+          <span>Новый<br>Вектор 2026</span>
+        </a>
+
+        <!-- Меню: список всех страниц -->
+        <div class="navlinks">
+          <!-- Активная страница помечена классом "active" -->
+          <!-- Для смены активной ссылки просто перенесите "active" на нужный пункт -->
+           <a class=""       href="index.html">Главная</a>
+          <a class=""       href="menu.html">Меню</a>
+          <a class=""       href="map.html">Карта</a>
+          <a class=""       href="faq.html">FAQ</a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== ШАПКА (ГЕРОЙ) ========== -->
+    <header class="hero">
+      <div class="wrap">
+        <section class="hero-card">
+          <div class="eyebrow">Новый Вектор — 2026</div>
+          <h1><span>Программа</span> проекта</h1>
+          <p class="lead">Раздел с переходами на «До Вектора» и каждый день проекта.</p>
+        </section>
+      </div>
+    </header>
+
+    <!-- ========== ОСНОВНОЙ КОНТЕНТ ========== -->
+    <main class="wrap">
+      <section class="tile-grid four">
+        <!-- День 1 – активный (кликабельный) -->
+        <a class="tile compact" href="day1.html">
+          <div class="num"></div>
+          <h2>День 1</h2>
+          <p>День заезда (добро пожаловать!)</p>
+        </a>
+
+        <!-- Дни 2–7 – заблокированы (класс disabled) -->
+        <a class="tile compact disabled" href="day2.html">
+          <div class="num"></div>
+          <h2>День 2</h2>
+          <p>День Профсоюза</p>
+        </a>
+        <a class="tile compact disabled" href="day3.html">
+          <div class="num"></div>
+          <h2>День 3</h2>
+          <p>Сообщество и лидерство</p>
+        </a>
+        <a class="tile compact disabled" href="day4.html">
+          <div class="num"></div>
+          <h2>День 4</h2>
+          <p>Молодёжь и профессиональные клубы</p>
+        </a>
+        <a class="tile compact disabled" href="day5.html">
+          <div class="num"></div>
+          <h2>День 5</h2>
+          <p>Обмен опытом и фестиваль</p>
+        </a>
+        <a class="tile compact disabled" href="day6.html">
+          <div class="num"></div>
+          <h2>День 6</h2>
+          <p>Управление и стратегия</p>
+        </a>
+        <a class="tile compact disabled" href="day7.html">
+          <div class="num"></div>
+          <h2>День 7</h2>
+          <p>Итоги и защита проектов</p>
+        </a>
+      </section>
+    </main>
+
+     <!-- ============================================================ -->
+    <!-- 4. ПОДВАЛ (одинаковый на всех страницах)                     -->
+    <!-- ============================================================ -->
+    <footer class="footer">
+      <div class="wrap footer-grid">
+        <div>
+          <strong>Новый Вектор 2026</strong>
+          <span>Движемся вперёд. Создаём будущее вместе!</span>
+        </div>
+        <div>
+          <strong>Службы</strong>
+          <a href="team-services.html">IT-служба</a><br>
+          <a href="team-services.html">Видеомедиа</a><br>
+          <a href="team-services.html">Служба заботы</a>
+        </div>
+        <div>
+          <strong>Связь</strong>
+          <a href="faq.html">FAQ</a><br>
+          <a href="map.html">Карта территории</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========== МОДАЛЬНОЕ ОКНО ========== -->
+    <div class="modal" id="modal" role="dialog" aria-modal="true">
+      <div class="modal-inner">
+        <button class="close" id="close" aria-label="Закрыть">×</button>
+        <img id="modalImg" alt="">
+      </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

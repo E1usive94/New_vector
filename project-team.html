@@ -1,41 +1,25 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <title>Команда Нового Вектора 2026</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Официальный сайт проекта Новый Вектор 2026">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Автоматический редирект на страницу "Команда" -->
+    <meta http-equiv="refresh" content="0; url=team.html" />
+    <title>Команда</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="topbar">
-      <div class="wrap nav">
-        <a class="brand" href="index.html">
-          <span class="brand-mark"></span>
-          <span>Новый<br>Вектор 2026</span>
-        </a>
-        <div class="navlinks">
-          <a class="" href="index.html">Главная</a>
-          <a class="" href="today.html">А что у нас сегодня?</a>
-          <a class="" href="necessary.html">Все необходимое</a>
-          <a class="active" href="project-team.html">Команда</a>
-          <a class="" href="services.html">Службы</a>
-        </div>
+    <!-- ============================================================ -->
+    <!-- 1. ОСНОВНОЙ БЛОК С ИНФОРМАЦИЕЙ О РЕДИРЕКТЕ                  -->
+    <!-- ============================================================ -->
+    <main class="wrap redirect-box">
+      <div class="section-card">
+        <h2>Команда</h2>
+        <p>
+          <!-- Ручная ссылка на случай, если редирект не сработает -->
+          <a class="btn green" href="team.html">Перейти</a>
+        </p>
       </div>
-    </div>
-    <header class="hero"><div class="wrap"><section class="hero-card"><div class="eyebrow">Команда проекта</div><h1>Команда «Нового <span>вектора — 2026</span>»</h1><p class="lead">Здесь собраны основные разделы команды: управляющая команда, окружные команды и службы/центры проекта.</p></section></div></header><main class="wrap"><section class="choice-grid"><a class="choice" href="team.html"><div class="num">01</div><h2>Управляющая команда</h2><p>Руководители и заместители проекта.</p></a><a class="choice" href="districts.html"><div class="num">02</div><h2>Окружные команды</h2><p>Руководители окружных команд и закрепления.</p></a><a class="choice" href="services.html"><div class="num">03</div><h2>Центры и службы</h2><p>Все действующие службы проекта: IT, медиа, забота, аналитика, методика, спорт и другие.</p></a></section></main>
-    <footer>
-      <div class="wrap">© Новый Вектор 2026 · Вместе создаём атмосферу, в которой хочется быть!</div>
-    </footer>
-    <div class="modal" id="modal" role="dialog" aria-modal="true">
-      <div class="modal-inner">
-        <button class="close" id="close" aria-label="Закрыть">×</button>
-        <img id="modalImg" alt="">
-      </div>
-    </div>
-    <script src="script.js"></script>
+    </main>
   </body>
 </html>

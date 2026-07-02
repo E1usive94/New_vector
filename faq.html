@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ</title>
+    <meta name="description" content="Официальный сайт проекта Новый Вектор 2026">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- ============================================================ -->
+    <!-- 1. ВЕРХНЯЯ ПАНЕЛЬ НАВИГАЦИИ (упрощённая)                     -->
+    <!-- ============================================================ -->
+    <div class="topbar">
+      <div class="wrap nav">
+        <a class="brand" href="index.html">
+          <span>Новый<br>Вектор 2026</span>
+        </a>
+        <div class="navlinks">
+          <a href="index.html">Главная</a>
+          <a href="menu.html">Меню</a>
+          <a href="map.html">Карта</a>
+          <a class="active" href="faq.html">FAQ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- 2. ШАПКА (ГЕРОЙ)                                             -->
+    <!-- ============================================================ -->
+    <header class="hero">
+      <div class="wrap">
+        <section class="hero-card">
+          <div class="eyebrow">Новый Вектор — 2026</div>
+          <h1><span>FAQ</span></h1>
+          <p class="lead">Ответы на популярные вопросы участников.</p>
+        </section>
+      </div>
+    </header>
+
+    <!-- ============================================================ -->
+    <!-- 3. ОСНОВНОЙ КОНТЕНТ – ВОПРОСЫ И ОТВЕТЫ                       -->
+    <!-- ============================================================ -->
+    <main class="wrap">
+      <section class="faq-list">
+        <details open>
+          <summary>Где смотреть актуальное расписание?</summary>
+          <p>На главной нажмите «Моё сегодня». Сайт откроет актуальную страницу дня с темой, расписанием, людьми дня, срочными объявлениями и напоминалкой.</p>
+        </details>
+        <details>
+          <summary>Где находятся материалы?</summary>
+          <p>Откройте раздел «Материалы». Там будут ссылки на папки Яндекс Диска: документы, презентации, шаблоны, фото, видео и проекты участников.</p>
+        </details>
+        <details>
+          <summary>Где найти команду проекта?</summary>
+          <p>Откройте «Меню» → «Команда». Внутри есть управляющая команда, руководители округов, центры и службы.</p>
+        </details>
+        <details>
+          <summary>Куда писать, если что-то не работает на сайте?</summary>
+          <p>В футере есть блок «Службы» и «Связь». Добавьте туда актуальный контакт IT-службы или почту проекта.</p>
+        </details>
+        <details>
+          <summary>Как обновить актуальный день?</summary>
+          <p>Откройте файл <code>js/config.js</code> и поменяйте значение <code>currentDayUrl</code> на нужную страницу, например <code>day4.html</code>.</p>
+        </details>
+      </section>
+    </main>
+
+    <!-- ============================================================ -->
+    <!-- 4. ПОДВАЛ (упрощённый)                                       -->
+    <!-- ============================================================ -->
+    <footer class="footer">
+      <div class="wrap footer-grid">
+        <div>
+          <strong>Новый Вектор 2026</strong>
+          <span>Движемся вперёд. Создаём будущее вместе!</span>
+        </div>
+        <div>
+          <strong>Службы</strong>
+          <a href="team-services.html">IT-служба</a><br>
+          <a href="team-services.html">Видеомедиа</a><br>
+          <a href="team-services.html">Служба заботы</a>
+        </div>
+        <div>
+          <strong>Связь</strong>
+          <a href="faq.html">FAQ</a><br>
+          <a href="map.html">Карта территории</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================================ -->
+    <!-- 5. МОДАЛЬНОЕ ОКНО И СКРИПТЫ                                  -->
+    <!-- ============================================================ -->
+    <div class="modal" id="modal" role="dialog" aria-modal="true">
+      <div class="modal-inner">
+        <button class="close" id="close" aria-label="Закрыть">×</button>
+        <img id="modalImg" alt="">
+      </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

@@ -4,83 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Новый Вектор 2026</title>
-    <meta name="description" content="Новый Вектор 2026">
+    <meta name="description" content="Официальный сайт проекта Новый Вектор 2026">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <div class="topbar">
-      <div class="wrap nav">
-        <a class="brand" href="index.html">
-          <span class="brand-mark"></span>
-          <span>
-            Новый<br>Вектор 2026
-          </span>
-        </a>
-        <div class="navlinks">
-          <a class="active" href="index.html">Главная</a>
-          <a class="" href="services.html">Службы</a>
-          <a class="" href="districts.html">Окружные команды</a>
-          <a class="" href="team.html">Управляющая команда</a>
+  <body class="splash">
+    <main class="splash-shell">
+      <div class="splash-top">
+        <div class="splash-title">
+         
+          <h1>Новый <span>Вектор</span> 2026</h1>
         </div>
+        <div class="splash-note"></div>
       </div>
-    </div>
-
-    <header class="hero">
-      <div class="wrap">
-        <section class="hero-card">
-          <div class="eyebrow">Навигация</div>
-          <h1>
-            Выберите <span>раздел</span>
-          </h1>
-          <p class="lead">
-            Энциклопедия посвященная "Новому вектору - 2026", в которую попадут все участники профсоюзной школы, тем самым каждый войдёт в историю!
-          </p>
-        </section>
-      </div>
-    </header>
-
-    <main class="wrap">
-      <section class="choice-grid">
-        <a class="choice" href="services.html">
-          <div class="num">01</div>
-          <h2>Службы</h2>
-          <p>
-            Команды, которые отвечают за атмосферу, процессы, поддержку, аналитику, медиа, спорт и технологии.
-          </p>
+      <section class="splash-actions" aria-label="Главный выбор">
+        <a class="splash-button today" href="today.html" data-current-day-link>
+          <strong>Моё сегодня</strong>
+          <span>Быстрый переход к актуальному дню: тема, расписание, люди дня, срочные объявления и напоминалка.</span>
         </a>
-        <a class="choice" href="districts.html">
-          <div class="num">02</div>
-          <h2>Руководители окружных команд</h2>
-          <p>
-            Лица команд округов, их цитаты и личный ответ на вопрос: что для меня «Новый Вектор»?
-          </p>
-        </a>
-        <a class="choice" href="team.html">
-          <div class="num">03</div>
-          <h2>Управляющая команда</h2>
-          <p>
-            Команда, которая собирает проект «Новый Вектор — 2026» в единую систему.
-          </p>
+        <a class="splash-button menu" href="menu.html">
+          <strong>Меню</strong>
+          <span>Все основные разделы сайта: программа, материалы, команда, карта территории, медиа и FAQ.</span>
         </a>
       </section>
+      <div class="splash-footer"><span>Движемся вперёд. Создаём будущее вместе!</span><span class="hash">#НОВЫЙВЕКТОР2026</span></div>
     </main>
-
-    <footer>
-      <div class="wrap">
-        © Новый Вектор 2026 · Вместе создаём атмосферу, в которой хочется быть!
-      </div>
-    </footer>
-
-    <div class="modal" id="modal" role="dialog" aria-modal="true">
-      <div class="modal-inner">
-        <button class="close" id="close" aria-label="Закрыть">×</button>
-        <img id="modalImg" alt="">
-      </div>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
