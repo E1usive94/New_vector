@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="ru">
 <head>
 <meta charset="utf-8"/>
@@ -212,83 +211,89 @@
 </section>
 <!-- Сетка быстрых ссылок на соцсети и медиаресурсы -->
 <section class="tile-grid four">
-<!-- Плитка 1: VK -->
-<a class="tile compact" href="https://vk.com/noviy_vector" rel="noopener noreferrer" target="_blank">
-<div class="num">Медиа</div>
-<h2>VK</h2>
-<p>Группа "Новый Вектор - 2026" в VK</p>
-</a>
-<!-- Плитка 2: Max -->
-<a class="tile compact" href="https://max.ru/join/WMBjdJKCGQx_gZSxHiW-GYQnLAtnaqPjkzLyuDHUq54" rel="noopener noreferrer" target="_blank">
-<div class="num">Медиа</div>
-<h2>Max</h2>
-<p>Канал "Новый Вектор - 2026" в МАХ</p>
-</a>
-<!-- Плитка 3: Фото -->
-<a class="tile compact" href="https://vk.com/albums-214033033" rel="noopener noreferrer" target="_blank">
-<div class="num">Медиа</div>
-<h2>Фото</h2>
-<p>Альбомы проекта.</p>
-</a>
-<!-- Плитка 4: Видео -->
-<a class="tile compact" href="https://vkvideo.ru/@noviy_vector" rel="noopener noreferrer" target="_blank">
-<div class="num">Медиа</div>
-<h2>Видео</h2>
-<p>Ролики и записи.</p>
-</a>
+  <!-- Плитка 1: VK -->
+  <a class="tile compact" 
+     href="https://vk.com/noviy_vector" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    <div class="num">Медиа</div>
+    <h2>VK</h2>
+    <p>Группа "Новый Вектор - 2026" в VK</p>
+  </a>
+
+  <!-- Плитка 2: Max -->
+  <a class="tile compact" 
+     href="https://max.ru/join/WMBjdJKCGQx_gZSxHiW-GYQnLAtnaqPjkzLyuDHUq54" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    <div class="num">Медиа</div>
+    <h2>Max</h2>
+    <p>Канал "Новый Вектор - 2026" в МАХ</p>
+  </a>
+
+  <!-- Плитка 3: Фото -->
+  <a class="tile compact" 
+     href="https://vk.com/albums-214033033" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    <div class="num">Медиа</div>
+    <h2>Фото</h2>
+    <p>Альбомы проекта.</p>
+  </a>
+
+  <!-- Плитка 4: Видео -->
+  <a class="tile compact" 
+     href="https://vkvideo.ru/@noviy_vector" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    <div class="num">Медиа</div>
+    <h2>Видео</h2>
+    <p>Ролики и записи.</p>
+  </a>
 </section>
-</main>
-<!-- ============================================================ -->
-<!-- 4. ПОДВАЛ (одинаковый на всех страницах)                     -->
-<!-- ============================================================ -->
-<footer class="footer">
-<div class="wrap footer-grid">
-<div>
-<strong>Новый Вектор 2026</strong>
-<span>Движемся вперёд. Создаём будущее вместе!</span>
-</div>
-<div>
-<strong>Службы</strong>
-<a href="team-services.html">IT-служба</a><br/>
-<a href="team-services.html">Видеомедиа</a><br/>
-<a href="team-services.html">Служба заботы</a>
-</div>
-<div>
-<strong>Связь</strong>
-<a href="faq.html">FAQ</a><br/>
-<a href="map.html">Карта территории</a>
-</div>
-</div>
-</footer>
-<!-- ============================================================ -->
-<!-- 5. МОДАЛЬНОЕ ОКНО (для увеличения изображений)               -->
-<!-- ============================================================ -->
-<div aria-modal="true" class="modal" id="modal" role="dialog">
-<div class="modal-inner">
-<button aria-label="Закрыть" class="close" id="close">×</button>
-<img alt="" id="modalImg"/>
-</div>
-</div>
-<!-- ============================================================ -->
-<!-- 6. ПОДКЛЮЧЕНИЕ СКРИПТОВ                                     -->
-<!-- ============================================================ -->
-<script src="js/config.js"></script>
-<script src="js/main.js"></script><script>
-(function(){
-  document.querySelectorAll('.media-carousel').forEach(function(carousel){
-    var track = carousel.querySelector('.media-carousel-track');
-    var prev = carousel.querySelector('.carousel-control--prev');
-    var next = carousel.querySelector('.carousel-control--next');
-    if (!track) return;
-    function scrollCarousel(direction){
-      var card = track.querySelector('.gallery-photo--carousel');
-      var step = card ? card.getBoundingClientRect().width + 12 : 220;
-      track.scrollBy({ left: direction * step, behavior: 'smooth' });
-    }
-    if (prev) prev.addEventListener('click', function(){ scrollCarousel(-1); });
-    if (next) next.addEventListener('click', function(){ scrollCarousel(1); });
-  });
-})();
-</script>
-</body>
+
+      
+
+    </main>
+
+    <!-- ============================================================ -->
+    <!-- 4. ПОДВАЛ (одинаковый на всех страницах)                     -->
+    <!-- ============================================================ -->
+    <footer class="footer">
+      <div class="wrap footer-grid">
+        <div>
+          <strong>Новый Вектор 2026</strong>
+          <span>Движемся вперёд. Создаём будущее вместе!</span>
+        </div>
+        <div>
+          <strong>Службы</strong>
+          <a href="team-services.html">IT-служба</a><br>
+          <a href="team-services.html">Видеомедиа</a><br>
+          <a href="team-services.html">Служба заботы</a>
+        </div>
+        <div>
+          <strong>Связь</strong>
+          <a href="faq.html">FAQ</a><br>
+          <a href="map.html">Карта территории</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================================ -->
+    <!-- 5. МОДАЛЬНОЕ ОКНО (для увеличения изображений)               -->
+    <!-- ============================================================ -->
+    <div class="modal" id="modal" role="dialog" aria-modal="true">
+      <div class="modal-inner">
+        <button class="close" id="close" aria-label="Закрыть">×</button>
+        <img id="modalImg" alt="">
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- 6. ПОДКЛЮЧЕНИЕ СКРИПТОВ                                     -->
+    <!-- ============================================================ -->
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
 </html>
