@@ -1114,6 +1114,154 @@ h1 span,
   line-height: 1.5;
 }
 
+
+
+/* ============================================================ */
+/* 12.1. МЕДИА: дневные карточки и карусель                     */
+/* ============================================================ */
+.media-days {
+  display: grid;
+  gap: 22px;
+}
+
+.media-day-card {
+  grid-template-columns: minmax(190px, 240px) minmax(0, 1fr);
+  align-items: stretch;
+}
+
+.media-day-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  min-height: 100%;
+}
+
+.media-day-head .post-day {
+  min-height: 128px;
+  padding: 16px;
+  text-align: center;
+  line-height: 1.05;
+  font-size: clamp(26px, 3vw, 42px);
+}
+
+.media-gallery--single-carousel {
+  min-width: 0;
+}
+
+.media-carousel {
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr) 46px;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.media-carousel-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 32px) / 3);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  min-width: 0;
+  padding: 2px;
+}
+
+.media-carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-photo {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+}
+
+.gallery-photo--carousel {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid rgba(132, 220, 85, .28);
+  background: linear-gradient(135deg, rgba(103, 182, 58, .14), rgba(255, 138, 0, .14));
+  scroll-snap-align: start;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .04);
+}
+
+.gallery-photo--carousel img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.carousel-control {
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(255, 138, 0, .42);
+  border-radius: 50%;
+  background: rgba(255, 138, 0, .14);
+  color: var(--white);
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform .18s ease, background .18s ease, border-color .18s ease, opacity .18s ease;
+}
+
+.carousel-control:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 138, 0, .22);
+  border-color: rgba(255, 138, 0, .68);
+}
+
+.carousel-control:disabled {
+  opacity: .35;
+  cursor: default;
+  transform: none;
+}
+
+.media-links {
+  grid-column: 2;
+}
+
+@media (max-width: 900px) {
+  .media-day-card {
+    grid-template-columns: 1fr;
+  }
+
+  .media-links {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .media-carousel {
+    grid-template-columns: 40px minmax(0, 1fr) 40px;
+    gap: 8px;
+  }
+
+  .media-carousel-track {
+    grid-auto-columns: 100%;
+  }
+
+  .carousel-control {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
+}
+
 /* ============================================================ */
 /* 13. МОДАЛЬНОЕ ОКНО                                           */
 /* ============================================================ */
