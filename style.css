@@ -1558,3 +1558,96 @@ code {
   }
 }
 
+
+/* ============================================================ */
+/* МАТЕРИАЛЫ ПО ДНЯМ                                            */
+/* ============================================================ */
+.materials-days-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding: 10px 0 64px;
+}
+
+.materials-day-card {
+  min-height: 230px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 26px;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, rgba(9, 35, 26, .92), rgba(2, 10, 8, .96));
+  box-shadow: 0 20px 55px rgba(0, 0, 0, .36);
+  position: relative;
+  overflow: hidden;
+  transition: .22s ease;
+}
+
+.materials-day-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 138, 0, .75);
+  box-shadow: 0 30px 82px rgba(0, 0, 0, .52);
+}
+
+.materials-day-card::after {
+  content: "";
+  position: absolute;
+  right: -52px;
+  bottom: -62px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: 24px solid rgba(103, 182, 58, .15);
+  border-top-color: rgba(255, 138, 0, .25);
+  pointer-events: none;
+}
+
+.materials-day-number {
+  display: inline-grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  color: #06100d;
+  background: linear-gradient(135deg, var(--orange), var(--green2));
+  font-weight: 900;
+  font-size: 22px;
+  box-shadow: 0 0 28px rgba(255, 138, 0, .28);
+}
+
+.materials-day-card h2 {
+  margin: 30px 0 12px;
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: .95;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
+}
+
+.materials-day-card p {
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.materials-day-card strong {
+  color: var(--green2);
+  font-weight: 900;
+}
+
+@media (max-width: 1024px) {
+  .materials-days-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .materials-days-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .materials-day-card {
+    min-height: 190px;
+  }
+}
+
