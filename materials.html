@@ -11,155 +11,90 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
-    <!-- ============================================================ -->
-    <!-- 1. ВЕРХНЯЯ ПАНЕЛЬ НАВИГАЦИИ                                  -->
-    <!-- ============================================================ -->
     <div class="topbar">
       <div class="wrap nav">
-        <a class="brand" href="index.html"><span>Новый<br>Вектор 2026</span></a>
-        <div class="navlinks">
-          <a href="index.html">Главная</a>
-          <a href="menu.html">Меню</a>
-          <a href="map.html">Карта</a>
-          <a href="faq.html">FAQ</a>
-        </div>
+        <a class="brand" href="index.html"><span class="brand-mark"></span><span>Новый<br>Вектор 2026</span></a>
+        <div class="navlinks"><a href="index.html">Главная</a><a href="today.html">Моё сегодня</a><a href="menu.html">Меню</a><a href="program.html">Программа</a><a class="active" href="materials.html">Материалы</a><a href="team.html">Команда</a><a href="map.html">Карта</a><a href="media.html">Медиа</a><a href="faq.html">FAQ</a></div>
       </div>
     </div>
 
-    <!-- ============================================================ -->
-    <!-- 2. ШАПКА (ГЕРОЙ)                                             -->
-    <!-- ============================================================ -->
     <header class="hero">
       <div class="wrap">
         <section class="hero-card">
           <div class="eyebrow">Новый Вектор — 2026</div>
-          <h1><span>Материалы</span> проекта</h1>
-          <p class="lead">Быстрые переходы к папкам с файлами, фото, видео и проектами.</p>
+          <h1><span>Материалы</span></h1>
+          <p class="lead">Выберите день проекта, чтобы перейти на Яндекс Диск с презентациями и материалами этого дня.</p>
         </section>
       </div>
     </header>
 
-    <!-- ============================================================ -->
-    <!-- 3. ОСНОВНОЙ КОНТЕНТ – СПИСОК ССЫЛОК                         -->
-    <!-- ============================================================ -->
     <main class="wrap">
-      <section class="link-list">
-
-        <!-- Пункт 1: Документы -->
-        <a class="link-item" href="#" target="_blank" rel="noopener">
-          <div class="li-icon">📄</div>
-          <div>
-            <h2>Документы</h2>
-            <p>Распорядительные документы, методические материалы и важные файлы.</p>
-          </div>
-          <div class="arrow">→</div>
+      <section class="materials-days-grid" aria-label="Материалы по дням">
+        <a class="materials-day-card" href="https://disk.yandex.ru/" target="_blank" rel="noopener">
+          <span class="materials-day-number">1</span>
+          <h2>День 1</h2>
+          <p>Презентации и материалы первого дня.</p>
+          <strong>Открыть Яндекс Диск →</strong>
         </a>
 
-        <!-- Пункт 2: Презентации -->
-        <a class="link-item" href="#" target="_blank" rel="noopener">
-          <div class="li-icon">🖥️</div>
-          <div>
-            <h2>Презентации</h2>
-            <p>Презентации выступлений, обучающие материалы и шаблоны.</p>
-          </div>
-          <div class="arrow">→</div>
+        <a class="materials-day-card" href="https://disk.yandex.ru/" target="_blank" rel="noopener">
+          <span class="materials-day-number">2</span>
+          <h2>День 2</h2>
+          <p>Презентации и материалы второго дня.</p>
+          <strong>Открыть Яндекс Диск →</strong>
         </a>
 
-        <!-- Пункт 3: Шаблоны -->
-        <a class="link-item" href="#" target="_blank" rel="noopener">
-          <div class="li-icon">🧩</div>
-          <div>
-            <h2>Шаблоны</h2>
-            <p>Шаблоны документов, чек-листы, бланки и формы.</p>
-          </div>
-          <div class="arrow">→</div>
+        <a class="materials-day-card" href="https://disk.yandex.ru/" target="_blank" rel="noopener">
+          <span class="materials-day-number">3</span>
+          <h2>День 3</h2>
+          <p>Презентации и материалы третьего дня.</p>
+          <strong>Открыть Яндекс Диск →</strong>
         </a>
 
-        <!-- Пункт 4: Фото -->
-        <a class="link-item" href="#" target="_blank" rel="noopener">
-          <div class="li-icon">📸</div>
-          <div>
-            <h2>Фото</h2>
-            <p>Папки с фотографиями проекта.</p>
-          </div>
-          <div class="arrow">→</div>
+        <a class="materials-day-card" href="https://disk.yandex.ru/" target="_blank" rel="noopener">
+          <span class="materials-day-number">4</span>
+          <h2>День 4</h2>
+          <p>Презентации и материалы четвёртого дня.</p>
+          <strong>Открыть Яндекс Диск →</strong>
         </a>
 
-        <!-- Пункт 5: Видео -->
-        <a class="link-item" href="#" target="_blank" rel="noopener">
-          <div class="li-icon">🎥</div>
-          <div>
-            <h2>Видео</h2>
-            <p>Видеозаписи мероприятий и ролики.</p>
-          </div>
-          <div class="arrow">→</div>
+        <a class="materials-day-card" href="https://disk.yandex.ru/" target="_blank" rel="noopener">
+          <span class="materials-day-number">5</span>
+          <h2>День 5</h2>
+          <p>Презентации и материалы пятого дня.</p>
+          <strong>Открыть Яндекс Диск →</strong>
         </a>
 
-        <!-- Пункт 6: Проекты участников -->
-        <a class="link-item" href="#" target="_blank" rel="noopener">
-          <div class="li-icon">🚀</div>
-          <div>
-            <h2>Проекты участников</h2>
-            <p>Презентации проектов, итоговые материалы и лучшие практики.</p>
-          </div>
-          <div class="arrow">→</div>
+        <a class="materials-day-card" href="https://disk.yandex.ru/" target="_blank" rel="noopener">
+          <span class="materials-day-number">6</span>
+          <h2>День 6</h2>
+          <p>Презентации и материалы шестого дня.</p>
+          <strong>Открыть Яндекс Диск →</strong>
         </a>
 
-        <!-- Пункт 7: Полезные ссылки -->
-        <a class="link-item" href="#" target="_blank" rel="noopener">
-          <div class="li-icon">🔗</div>
-          <div>
-            <h2>Полезные ссылки</h2>
-            <p>Внешние ресурсы и сервисы.</p>
-          </div>
-          <div class="arrow">→</div>
+        <a class="materials-day-card" href="https://disk.yandex.ru/" target="_blank" rel="noopener">
+          <span class="materials-day-number">7</span>
+          <h2>День 7</h2>
+          <p>Презентации и материалы седьмого дня.</p>
+          <strong>Открыть Яндекс Диск →</strong>
         </a>
-
       </section>
 
       <div class="code-note">
-        В карточках раздела «Материалы» сейчас стоят заглушки <code>href="#"</code>.
-        Когда будут ссылки на Яндекс Диск, замените <code>#</code> на нужную ссылку.
+        Чтобы заменить ссылки на реальные папки, откройте файл <code>materials.html</code> и замените <code>https://disk.yandex.ru/</code> в карточках дней на нужные ссылки Яндекс Диска.
       </div>
-
     </main>
 
-    <!-- ============================================================ -->
-    <!-- 4. ПОДВАЛ                                                    -->
-    <!-- ============================================================ -->
     <footer class="footer">
       <div class="wrap footer-grid">
-        <div>
-          <strong>Новый Вектор 2026</strong>
-          <span>Движемся вперёд. Создаём будущее вместе!</span>
-        </div>
-        <div>
-          <strong>Службы</strong>
-          <a href="team-services.html">IT-служба</a><br>
-          <a href="team-services.html">Видеомедиа</a><br>
-          <a href="team-services.html">Служба заботы</a>
-        </div>
-        <div>
-          <strong>Связь</strong>
-          <a href="faq.html">FAQ</a><br>
-          <a href="map.html">Карта территории</a>
-        </div>
+        <div><strong>Новый Вектор 2026</strong><span>Движемся вперёд. Создаём будущее вместе!</span></div>
+        <div><strong>Экстренные контакты</strong><a href="#">Забота</a><br><a href="#">Медики</a><br><a href="#">Оргкомитет</a></div>
+        <div><strong>Службы</strong><a href="team-services.html">IT-служба</a><br><a href="team-services.html">Видеомедиа</a><br><a href="team-services.html">Служба заботы</a></div>
+        <div><strong>Связь</strong><a href="#">Почта проекта</a><br><a href="faq.html">FAQ</a><br><a href="map.html">Карта территории</a></div>
       </div>
     </footer>
 
-    <!-- ============================================================ -->
-    <!-- 5. МОДАЛЬНОЕ ОКНО И СКРИПТЫ                                  -->
-    <!-- ============================================================ -->
-    <div class="modal" id="modal" role="dialog" aria-modal="true">
-      <div class="modal-inner">
-        <button class="close" id="close" aria-label="Закрыть">×</button>
-        <img id="modalImg" alt="">
-      </div>
-    </div>
-
     <script src="js/config.js"></script>
     <script src="js/main.js"></script>
-
   </body>
 </html>
